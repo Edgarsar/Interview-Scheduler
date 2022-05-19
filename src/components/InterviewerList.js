@@ -13,12 +13,11 @@ export default function InterviewerList({ interviewers, interviewer, setIntervie
           interviewers.map((singleInterviewer) => {
             return (
               <InterviewerListItem
-                key={[singleInterviewer.id]}
-                id={singleInterviewer.id}
+                key={singleInterviewer.id}
                 name={singleInterviewer.name}
                 avatar={singleInterviewer.avatar}
                 selected={singleInterviewer.id === interviewer}
-                setInterviewer={setInterviewer}
+                setInterviewer={()=>setInterviewer(singleInterviewer.id)}
               />
             );
           })
