@@ -3,21 +3,21 @@ import "components/InterviewerList.scss";
 import InterviewerListItem from "./InterviewerListItem";
 
 
-export default function InterviewerList({ interviewers, interviewer, setInterviewer }) {
+export default function InterviewerList({ interviewers, value, onChange }) {
  
   return (
     <section className="interviewers">
       <h4 className="interviewers__header text--light">Interviewer</h4>
       <ul className="interviewers__list">
         {
-          interviewers.map((singleInterviewer) => {
+          interviewers.map((interviewer) => {
             return (
               <InterviewerListItem
-                key={singleInterviewer.id}
-                name={singleInterviewer.name}
-                avatar={singleInterviewer.avatar}
-                selected={singleInterviewer.id === interviewer}
-                setInterviewer={()=>setInterviewer(singleInterviewer.id)}
+                key={interviewer.id}
+                name={interviewer.name}
+                avatar={interviewer.avatar}
+                selected={interviewer.id === value}
+                setInterviewer={()=>onChange(interviewer.id)}
               />
             );
           })
