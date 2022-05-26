@@ -7,7 +7,7 @@ export function getAppointmentsForDay(state, day) {
     return [];
   }
 
-  const appointmentsId = filteredDays[0].appointments
+  const appointmentsId = filteredDays[0].appointments;
   for (const id of appointmentsId) {
     appointments.push(state.appointments[id])
   }
