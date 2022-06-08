@@ -32,15 +32,25 @@ export default function useApplicationData() {
       ...state.appointments,
       [id]: appointment
     };
-
+    const days = [...state.days];
+    // find the selected day object
+    const selectedDay = days.filter(day => day.name === state.day)[0];
+    // if an appointment with given id has been booked then decrease selected day spot by 1
+    if (state.appointments[id].interview === null) {
+      selectedDay.spots--;
+    }
+    
+   
     return axios.put(`/api/appointments/${id}`, { interview })
       .then(() => {
+
         setState({
           ...state,
           appointments
         });
+
       });
-  };
+  }
 
   function cancelInterview(id) {
 
@@ -52,6 +62,13 @@ export default function useApplicationData() {
       ...state.appointments,
       [id]: appointment
     };
+
+    const days = [...state.days]
+    // find the selected day object
+    const selectedDay = days.filter(day => day.name === state.day)[0];
+    // if the appointment has been cancelled then increase spots by 1
+    selectedDay.spots++;
+
 
     return axios.delete(`/api/appointments/${id}`)
       .then(() => {
