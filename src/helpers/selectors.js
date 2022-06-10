@@ -47,5 +47,21 @@ export function getInterviewersForDay(state, day) {
 
 
 
+export function updateSpots(days, appointments) {
+
+  let newDays = days.map((day) => {
+    let spots = 0;
+    for (const appointment of day.appointments) {
+      if (appointments[appointment].interview === null) {
+        spots++;
+      }
+    }
+    return { ...day, spots: spots };
+  }
+  )
+  return newDays;
+}
+
+
 
 
