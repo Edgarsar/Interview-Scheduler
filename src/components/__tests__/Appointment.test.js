@@ -7,7 +7,7 @@ import Appointment from "components/Appointment";
 afterEach(cleanup);
 
 describe("Appoinment", () => {
-  it("renders witout crashing", () => {
+  it("renders without crashing", () => {
     render(<Appointment />);
   });
 });
