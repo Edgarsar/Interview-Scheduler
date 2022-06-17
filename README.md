@@ -33,9 +33,9 @@ Interview Scheduler is a single-page application (SPA) that allows users to book
 
 !["screenshot of Cypress E2E test"](https://github.com/Edgarsar/Interview-Scheduler/blob/master/docs/cypress-e2e-test.png?raw=true)
 
-### Jest Unit and Integration Tests
+### Jest Test Coveerage
 
-!["screenshot of search page"]()
+!["screenshot of search page"](https://github.com/Edgarsar/Interview-Scheduler/blob/master/docs/coverage-jest.png?raw=true)
 
 
 ## Dependencies
