@@ -7,31 +7,31 @@ Interview Scheduler is a single-page application (SPA) that allows users to book
 
 ### Landing page
 
-!["screenshot of main page"]()
+!["screenshot of main page"](https://github.com/Edgarsar/Interview-Scheduler/blob/master/docs/main_page.png?raw=true)
 
 ### Creating a new appointment
 
-!["screenshot of create listing page"]()
+!["screenshot of create a new appoinment"](https://github.com/Edgarsar/Interview-Scheduler/blob/master/docs/appoinment-book.png?raw=true)
 
 ### Deleting an appointment
 
-!["screenshot of create listing page"]()
+!["screenshot of create listing page"](https://github.com/Edgarsar/Interview-Scheduler/blob/master/docs/appoinment_delete.png?raw=true)
 
 ### Error handling
 
-!["screenshot of search page"]()
+!["screenshot of error handling"](https://github.com/Edgarsar/Interview-Scheduler/blob/master/docs/error-handling.png?raw=true)
 
 ### Mobile view
 
-!["screenshot of search page"]()
+!["screenshot of mobile view](https://github.com/Edgarsar/Interview-Scheduler/blob/master/docs/mobile-view.png?raw=true)
 
 ### Storybook Component Tests
 
-!["screenshot of search page"]()
+!["screenshot of StoryBook"](https://github.com/Edgarsar/Interview-Scheduler/blob/master/docs/storybook.png?raw=true)
 
 ### Cypress E2E Tests
 
-!["screenshot of search page"]()
+!["screenshot of Cypress E2E test"](https://github.com/Edgarsar/Interview-Scheduler/blob/master/docs/cypress-e2e-test.png?raw=true)
 
 ### Jest Unit and Integration Tests
 
