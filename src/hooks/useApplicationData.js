@@ -55,7 +55,6 @@ export default function useApplicationData() {
   }, [])
 
 
-
   const setDay = day => dispatch({ type: "SET_DAY", day });
 
   function bookInterview(id, interview) {
@@ -73,7 +72,7 @@ export default function useApplicationData() {
     return axios.delete(`/api/appointments/${id}`)
       .then(() => {
         // const days = updateSpots(state.days, appointments);
-        dispatch({ type: SET_INTERVIEW, id, interview: null })
+        dispatch({ type: SET_INTERVIEW, id, interview: null, })
       });
   };
 
